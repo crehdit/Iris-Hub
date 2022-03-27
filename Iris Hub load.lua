@@ -30,7 +30,7 @@ local ts = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 
 function France.functions:DestroyGUI()
-	if game.CoreGui:FindFirstChild("XanaxLib") then game.CoreGui.XanaxLib:Destroy() end
+	if game.CoreGui:FindFirstChild("France") then game.CoreGui.France:Destroy() end
 end
 France.functions:DestroyGUI() 
 function France.functions:Tween(Object, TweenData, Data)
@@ -91,7 +91,7 @@ function France.functions:ChangeSection(NewSection)
 end
 
 function France:CreateWindow(WindowText)
-	local XanaxLib = Instance.new("ScreenGui")
+	local France = Instance.new("ScreenGui")
 	local Main = Instance.new("ImageButton")
 	local TabBtns = Instance.new("ImageButton")
 	local Line1 = Instance.new("Frame")
@@ -103,11 +103,11 @@ function France:CreateWindow(WindowText)
 	local TabTxt = Instance.new("TextLabel")
 	local TabNameStatus = Instance.new("TextLabel")
 	
-	XanaxLib.Name = "XanaxLib"
-	XanaxLib.Parent = game:GetService("CoreGui")
+	France.Name = "France"
+	France.Parent = game:GetService("CoreGui")
 
 	Main.Name = "Main"
-	Main.Parent = XanaxLib
+	Main.Parent = France
 	Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Main.BackgroundTransparency = 1.000
 	Main.Position = UDim2.new(0.28542304, 0, 0.224669605, 0)
@@ -123,13 +123,13 @@ function France:CreateWindow(WindowText)
 	TabBtns.BackgroundTransparency = 1.000
 	TabBtns.Size = UDim2.new(0, 120, 0, 250)
 	TabBtns.Image = "rbxassetid://2790382281"
-	TabBtns.ImageColor3 = Color3.fromRGB(43, 43, 43)
+	TabBtns.ImageColor3 = Color3.fromRGB(145, 0, 255)
 	TabBtns.ScaleType = Enum.ScaleType.Slice
 	TabBtns.SliceCenter = Rect.new(4, 4, 252, 252)
 	
 	Line1.Name = "Line1"
 	Line1.Parent = TabBtns
-	Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Line1.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
 	Line1.BorderSizePixel = 0
 	Line1.Position = UDim2.new(0.975000024, 0, 0.119999997, 0)
 	Line1.Size = UDim2.new(0, 4, 0, 220)
@@ -154,7 +154,7 @@ function France:CreateWindow(WindowText)
 	
 	Top.Name = "Top"
 	Top.Parent = Main
-	Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Top.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
 	Top.BackgroundTransparency = 1.000
 	Top.Size = UDim2.new(0, 421, 0, 30)
 	Top.Image = "rbxassetid://2790382281"
@@ -164,7 +164,7 @@ function France:CreateWindow(WindowText)
 	
 	Line2.Name = "Line2"
 	Line2.Parent = Top
-	Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Line2.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
 	Line2.BorderSizePixel = 0
 	Line2.Position = UDim2.new(0.277909726, 0, 0.866666675, 0)
 	Line2.Size = UDim2.new(0, 304, 0, 4)
