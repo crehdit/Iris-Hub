@@ -242,14 +242,14 @@ function France:CreateWindow(WindowText)
 		
 		BotomLien.Name = "BotomLien"
 		BotomLien.Parent = TabBtn
-		BotomLien.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+		BotomLien.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 		BotomLien.BorderSizePixel = 0
 		BotomLien.Position = UDim2.new(0, 0, 1, 0)
 		BotomLien.Size = UDim2.new(1, 0, 0, 1)
 		
 		TopLien.Name = "TopLien"
 		TopLien.Parent = TabBtn
-		TopLien.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+		TopLien.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 		TopLien.BorderSizePixel = 0
 		TopLien.Size = UDim2.new(1, 0, 0, 1)
 		if France.currentTab == nil then
@@ -269,7 +269,7 @@ function France:CreateWindow(WindowText)
 			
 			Button.Name = "Button"
 			Button.Parent = ObjectHolder
-			Button.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+			Button.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 			Button.BorderSizePixel = 0
 			Button.Position = UDim2.new(0.166666672, 0, 0.122727275, 0)
 			Button.Size = UDim2.new(0, 267, 0, 30)
@@ -308,7 +308,7 @@ function France:CreateWindow(WindowText)
 			
 			Toggle.Name = "Toggle"
 			Toggle.Parent = ObjectHolder
-			Toggle.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+			Toggle.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 			Toggle.BorderSizePixel = 0
 			Toggle.Position = UDim2.new(0.166666672, 0, 0.122727275, 0)
 			Toggle.Size = UDim2.new(0, 267, 0, 30)
@@ -361,7 +361,7 @@ function France:CreateWindow(WindowText)
 			
 			Label.Name = "Label"
 			Label.Parent = ObjectHolder
-			Label.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+			Label.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 			Label.BorderSizePixel = 0
 			Label.Position = UDim2.new(0.0549999997, 0, 0.302727312, 0)
 			Label.Size = UDim2.new(0, 267, 0, 23)
@@ -400,7 +400,7 @@ function France:CreateWindow(WindowText)
             
             Slider.Name = "Slider"
             Slider.Parent = ObjectHolder
-            Slider.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+            Slider.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
             Slider.BorderSizePixel = 0
             Slider.Position = UDim2.new(0.166666672, 0, 0.122727275, 0)
             Slider.Size = UDim2.new(0, 267, 0, 30)
