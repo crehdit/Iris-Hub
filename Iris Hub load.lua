@@ -1,7 +1,20 @@
 --[[
-Iris Hub by france#0001
-Original UI by yeetus or some shit
-Recolored.
+EXAMPLE:
+local France = loadstring(game:HttpGet("https://pastebin.com/raw/XZz3Ytbu"))()
+local Ui = France:CreateWindow("Example UI")
+local Info = Ui:CreateSection("Info")
+local ExampleSection = Ui:CreateSection("Example")
+
+Info:CreateLabel("Made by yeetus#3635")
+Info:CreateLabel("This is a UI Library example")
+Info:CreateButton("Destroy UI", function() France.functions:DestroyGUI() end)
+
+ExampleSection:CreateLabel("This is label")
+ExampleSection:CreateButton("This is button", function() print("This is function") end)
+ExampleSection:CreateToggle("This is toggle", "This is flag", function(Toggled) print("This is optional argument", Toggled) end)
+ExampleSection:CreateSlider("This is walkspeed slider", "WalkSpeed", 16, 100, false, function(ws)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+end)
 ]]--
 
 local France = {}
@@ -17,7 +30,7 @@ local ts = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 
 function France.functions:DestroyGUI()
-	if game.CoreGui:FindFirstChild("France") then game.CoreGui.France:Destroy() end
+	if game.CoreGui:FindFirstChild("XanaxLib") then game.CoreGui.XanaxLib:Destroy() end
 end
 France.functions:DestroyGUI() 
 function France.functions:Tween(Object, TweenData, Data)
@@ -78,7 +91,7 @@ function France.functions:ChangeSection(NewSection)
 end
 
 function France:CreateWindow(WindowText)
-	local France = Instance.new("ScreenGui")
+	local XanaxLib = Instance.new("ScreenGui")
 	local Main = Instance.new("ImageButton")
 	local TabBtns = Instance.new("ImageButton")
 	local Line1 = Instance.new("Frame")
@@ -90,17 +103,17 @@ function France:CreateWindow(WindowText)
 	local TabTxt = Instance.new("TextLabel")
 	local TabNameStatus = Instance.new("TextLabel")
 	
-	France.Name = "France"
-	France.Parent = game:GetService("CoreGui")
+	XanaxLib.Name = "XanaxLib"
+	XanaxLib.Parent = game:GetService("CoreGui")
 
 	Main.Name = "Main"
-	Main.Parent = France
+	Main.Parent = XanaxLib
 	Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Main.BackgroundTransparency = 1.000
 	Main.Position = UDim2.new(0.28542304, 0, 0.224669605, 0)
 	Main.Size = UDim2.new(0, 421, 0, 250)
 	Main.Image = "rbxassetid://2790382281"
-	Main.ImageColor3 = Color3.fromRGB(145, 0, 255)
+	Main.ImageColor3 = Color3.fromRGB(52, 52, 52)
 	Main.ScaleType = Enum.ScaleType.Slice
 	Main.SliceCenter = Rect.new(4, 4, 252, 252)
 	
@@ -110,13 +123,13 @@ function France:CreateWindow(WindowText)
 	TabBtns.BackgroundTransparency = 1.000
 	TabBtns.Size = UDim2.new(0, 120, 0, 250)
 	TabBtns.Image = "rbxassetid://2790382281"
-	TabBtns.ImageColor3 = Color3.fromRGB(145, 0, 255)
+	TabBtns.ImageColor3 = Color3.fromRGB(43, 43, 43)
 	TabBtns.ScaleType = Enum.ScaleType.Slice
 	TabBtns.SliceCenter = Rect.new(4, 4, 252, 252)
 	
 	Line1.Name = "Line1"
 	Line1.Parent = TabBtns
-	Line1.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+	Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Line1.BorderSizePixel = 0
 	Line1.Position = UDim2.new(0.975000024, 0, 0.119999997, 0)
 	Line1.Size = UDim2.new(0, 4, 0, 220)
@@ -145,13 +158,13 @@ function France:CreateWindow(WindowText)
 	Top.BackgroundTransparency = 1.000
 	Top.Size = UDim2.new(0, 421, 0, 30)
 	Top.Image = "rbxassetid://2790382281"
-	Top.ImageColor3 = Color3.fromRGB(92, 4, 159)
+	Top.ImageColor3 = Color3.fromRGB(43, 43, 43)
 	Top.ScaleType = Enum.ScaleType.Slice
 	Top.SliceCenter = Rect.new(4, 4, 252, 252)
 	
 	Line2.Name = "Line2"
 	Line2.Parent = Top
-	Line2.BackgroundColor3 = Color3.fromRGB(92, 4, 159)
+	Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Line2.BorderSizePixel = 0
 	Line2.Position = UDim2.new(0.277909726, 0, 0.866666675, 0)
 	Line2.Size = UDim2.new(0, 304, 0, 4)
@@ -174,7 +187,7 @@ function France:CreateWindow(WindowText)
 	TabTxt.Position = UDim2.new(0, 0, 0.866666675, 0)
 	TabTxt.Size = UDim2.new(0, 117, 0, 17)
 	TabTxt.Font = Enum.Font.GothamSemibold
-	TabTxt.Text = "Tabs"
+	TabTxt.Text = "-Tabs-"
 	TabTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TabTxt.TextSize = 14.000
 	
