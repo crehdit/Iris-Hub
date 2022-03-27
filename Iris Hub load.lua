@@ -1,3 +1,9 @@
+--[[
+Iris Hub by france#0001
+Original UI by yeetus or some shit
+Recolored.
+]]--
+
 local France = {}
 
 France.flags = {}
@@ -11,7 +17,7 @@ local ts = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 
 function France.functions:DestroyGUI()
-	if game.CoreGui:FindFirstChild("XanaxLib") then game.CoreGui.XanaxLib:Destroy() end
+	if game.CoreGui:FindFirstChild("France") then game.CoreGui.France:Destroy() end
 end
 France.functions:DestroyGUI() 
 function France.functions:Tween(Object, TweenData, Data)
@@ -72,7 +78,7 @@ function France.functions:ChangeSection(NewSection)
 end
 
 function France:CreateWindow(WindowText)
-	local XanaxLib = Instance.new("ScreenGui")
+	local France = Instance.new("ScreenGui")
 	local Main = Instance.new("ImageButton")
 	local TabBtns = Instance.new("ImageButton")
 	local Line1 = Instance.new("Frame")
@@ -84,11 +90,11 @@ function France:CreateWindow(WindowText)
 	local TabTxt = Instance.new("TextLabel")
 	local TabNameStatus = Instance.new("TextLabel")
 	
-	XanaxLib.Name = "XanaxLib"
-	XanaxLib.Parent = game:GetService("CoreGui")
+	France.Name = "France"
+	France.Parent = game:GetService("CoreGui")
 
 	Main.Name = "Main"
-	Main.Parent = XanaxLib
+	Main.Parent = France
 	Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Main.BackgroundTransparency = 1.000
 	Main.Position = UDim2.new(0.28542304, 0, 0.224669605, 0)
@@ -168,7 +174,7 @@ function France:CreateWindow(WindowText)
 	TabTxt.Position = UDim2.new(0, 0, 0.866666675, 0)
 	TabTxt.Size = UDim2.new(0, 117, 0, 17)
 	TabTxt.Font = Enum.Font.GothamSemibold
-	TabTxt.Text = "-Tabs-"
+	TabTxt.Text = "Tabs"
 	TabTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TabTxt.TextSize = 14.000
 	
